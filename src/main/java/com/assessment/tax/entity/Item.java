@@ -9,6 +9,7 @@ public class Item {
     private boolean imported;
     private double price;
     private int quantity;
+    private double priceAfterTax;
 
 
     public Item() {
@@ -84,6 +85,13 @@ public class Item {
         this.imported = imported;
     }
 
+    public double getPriceAfterTax() {
+        return priceAfterTax;
+    }
+
+    public void setPriceAfterTax(double priceAfterTax) {
+        this.priceAfterTax = priceAfterTax;
+    }
 
     public enum ItemType {
         BOOK,
@@ -116,5 +124,8 @@ public class Item {
         return true;
     }
 
-
+    @Override
+    public String toString() {
+        return quantity + " " + (imported ? " imported " : " ") + itemName + " " + String.format("%.2f",getPriceAfterTax());
+    }
 }
