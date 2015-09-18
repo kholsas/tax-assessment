@@ -9,7 +9,7 @@ import java.util.Scanner;
 
 public class InputConverter {
 
-<<<<<<< HEAD
+
     public static String getFormattedAmount(double amount) {
 
         int wholeAmount = (int) (amount * 100);
@@ -26,8 +26,7 @@ public class InputConverter {
 
         return String.format("%.2f", wholeAmount / 100d);
     }
-=======
->>>>>>> e0d9ac0755abb2dabca4f30f2d2a8e0bd8c26c06
+
 
     public static List<Item> getItemsFromText() {
         final List<Item> listOfItems = new ArrayList<Item>();
@@ -39,11 +38,8 @@ public class InputConverter {
 
         for (int i = 0; i < numOfItems; i++) {
             keyboardScanner.nextLine();
-<<<<<<< HEAD
+
             System.out.println("Item number : " + (i + 1) + "\n");
-=======
-            System.out.println("Item number : " + (i+1)+"\n");
->>>>>>> e0d9ac0755abb2dabca4f30f2d2a8e0bd8c26c06
             final Item item = new Item();
             item.setId(new Random().nextInt(10000000));
             System.out.println("Enter the name of the product: ");
@@ -60,10 +56,6 @@ public class InputConverter {
             listOfItems.add(item);
         }
 
-<<<<<<< HEAD
         return listOfItems;
-=======
-         return listOfItems;
->>>>>>> e0d9ac0755abb2dabca4f30f2d2a8e0bd8c26c06
     }
 }
