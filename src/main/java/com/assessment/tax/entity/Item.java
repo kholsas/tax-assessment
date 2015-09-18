@@ -1,6 +1,9 @@
 package com.assessment.tax.entity;
 
+<<<<<<< HEAD
 import com.assessment.tax.client.converters.*;
+=======
+>>>>>>> e0d9ac0755abb2dabca4f30f2d2a8e0bd8c26c06
 public class Item {
 
 
@@ -127,6 +130,10 @@ public class Item {
 
     @Override
     public String toString() {
+<<<<<<< HEAD
         return quantity + " " + (imported ? " imported " : " ") + itemName + " " + InputConverter.getFormattedAmount(getPriceAfterTax());
+=======
+        return quantity + " " + (imported ? " imported " : " ") + itemName + " " + String.format("%.2f",getPriceAfterTax());
+>>>>>>> e0d9ac0755abb2dabca4f30f2d2a8e0bd8c26c06
     }
 }

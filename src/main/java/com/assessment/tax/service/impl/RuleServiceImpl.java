@@ -35,4 +35,8 @@ public class RuleServiceImpl implements RulesService {
         }
         return vat;
     }
+<<<<<<< HEAD
+=======
+
+>>>>>>> e0d9ac0755abb2dabca4f30f2d2a8e0bd8c26c06
 }
